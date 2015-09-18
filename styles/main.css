@@ -1,9 +1,17 @@
 body {
 	margin: 0;
+	margin-bottom: 50px;
+}
+section > h1 {
+	
+	clear: both;
+
 }
 
-.hero {
-	background-size: cover;
+section {
+	background-image: url("../images/panda.jpg");
+	background-size: 100%;
+	background-opacity:.5;
 }
 
 

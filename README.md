@@ -56,6 +56,8 @@ Add the panda dog image (in the images directory) as the background image of the
 Use jQuery to make the "read more" link at the bottom of the page function as follows:
 
 When the link is clicked the "more" paragraph should be shown and the link should change its text to "read less". If the link is clicked again it should change back to its original text and the "more" paragraph should be hidden.
-
+a
 ## Question 8
 Using jQuery and the `thumbnails` array inside of main.js, display all of the images and captions inside of the thumbnails section. When you click on a thumbnail image it should take you to the associated url. This should work regardless of the number of elements inside of the thumbnails array. I will test it with different data in the same format. Hint: you will need to use a loop.
+
+

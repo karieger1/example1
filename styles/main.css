@@ -1,6 +1,7 @@
 body {
 	margin: 0;
-	margin-bottom: 50px;
+	padding-bottom: 50px;
+	color: green;
 }
 section > h1 {
 	
@@ -10,7 +11,7 @@ section > h1 {
 
 section {
 	background-image: url("../images/panda.jpg");
-	background-size: 100%;
+	background-size: contain;
 	background-opacity:.5;
 }
 

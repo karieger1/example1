@@ -1,7 +1,7 @@
 'use strict';
 
 
-// $(function(){
+
 	var thumbnails = [
 		{
 			caption: 'An Avocado',
@@ -41,19 +41,20 @@ $(".read-more").click(function(){
 });
 
 
-var targetContainer = $('.thumbnails'); 
+var targetContainer = $('.thumbnails'); //wrapper
 
 // loop
 thumbnails.forEach(
 	function(item) {
-		var thumbnailImg = '<img src="' + item.image + '">'; // build the image
+		var thumbnailImg = '<div id="image"><img src="' + item.image + '"></div>'; // build the image
 		var thumbnailCaption = '<div class="caption">' + item.caption + '</div>'; // build the caption
+		var thumbnailURL = '<div class="url">' + item.url; + '</div>';
 
 		targetContainer.append(thumbnailImg, thumbnailCaption); // inject them into that wrapper 
 
-	$(item.image).click(function(){
-       	window.location.href = item.url; 
-	})
+		$("#image").click(function(){ //
+       	window.location.href = item.url.val(); 
+		})
 	    
 	});
 

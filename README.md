@@ -5,35 +5,38 @@ Fork and clone this repository down to your computer. Enter your answers into th
 ## Question 1
 What is the difference between elements that have a CSS property of `display: block` and elements that have a property of `display: inline`?
 
-*Enter your answer here*
+Display block means that elements will be displayed as a block, sort of like a paragraph. Usually elements will be stacked on top of one another unless a float is involved.
+Display inline means that elements will be displayed on the same line inside the current block. They will generally appear next to one another.
 
 
 ## Question 2
 Order the following CSS selectors from most specific to least specific. If two selectors are tied, then the one that appears lower should be considered more specific. Explain why you ordered them the way that you did.
 
 ```css
-button {
+
+5. button {
 	color: blue;
 }
 
-body > nav button.navbar-toggle {
+3. body > nav button.navbar-toggle {
 	color: red;
 }
 
-.navbar-header > .collapsed {
+2. .navbar-header > .collapsed {
 	color: green;
 }
 
-nav div.container div button {
+4. nav div.container div button {
 	color: red;
 }
 
-#logo {
+1. #logo {
 	color: pink;
 }
+
 ```
 
-*Enter your answer here*
+
 
 ## Question 3
 Link together the index.html file with the main.css and main.js files.

@@ -41,22 +41,27 @@ $(".read-more").click(function(){
 });
 
 
-var targetContainer = $('.thumbnails'); //wrapper
+var targetContainer = $(".thumbnails"); //wrapper
 
 // loop
 thumbnails.forEach(
 	function(item) {
 		var thumbnailImg = '<div id="image"><img src="' + item.image + '"></div>'; // build the image
 		var thumbnailCaption = '<div class="caption">' + item.caption + '</div>'; // build the caption
-		var thumbnailURL = '<div class="url">' + item.url; + '</div>';
+		var thumbnailURL = item.url;
 
-		targetContainer.append(thumbnailImg, thumbnailCaption); // inject them into that wrapper 
+		targetContainer.append(thumbnailImg, thumbnailCaption); // put these into wrapper   
 
-		$("#image").click(function(){ //
-       	window.location.href = item.url.val(); 
-		})
-	    
+			$("#image").click(function(item){ //make images clickable
+			event.preventDefault();
+	       	window.location.href = thumbnailURL; 
+			})
 	});
+
+
+
+
+
 
 
 
